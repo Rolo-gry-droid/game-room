@@ -67,9 +67,9 @@
     max-width: 760px;
     margin: 0 auto;
     padding: 40px 24px 32px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
-    justify-content: space-between;
     gap: 16px;
   }
 
@@ -217,7 +217,7 @@
     position: absolute;
     top: 18px;
     right: 20px;
-    width: clamp(96px, 12vw, 135px);
+    width: clamp(80px, 10vw, 115px);
     height: auto;
     z-index: 1;
     opacity: 0.85;
@@ -237,12 +237,18 @@
 
   @media (max-width: 640px){
     .corner-art{
-      width: 82px;
+      width: 68px;
       top: 14px;
       right: 16px;
     }
     .corner-art-joystick{
       display: none;
+    }
+  }
+  @media (max-width: 640px){
+    a[href*="buymeacoffee"] img{
+      height: 44px !important;
+      width: 158px !important;
     }
   }
 </style>
@@ -281,6 +287,7 @@
 
 <header>
   <div class="eyebrow"><span class="dot"></span> Game Room</div>
+  <a href="https://www.buymeacoffee.com/rologry" target="_blank" rel="noopener"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me a Coffee" style="height: 60px !important;width: 217px !important;"></a>
 </header>
 
 <main>
